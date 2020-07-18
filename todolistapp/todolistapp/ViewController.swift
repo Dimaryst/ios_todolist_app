@@ -5,11 +5,14 @@
 //  Created by  Dimary on 13.07.2020.
 //  Copyright © 2020  Dimary. All rights reserved.
 //  Test Application (iOS Developer tutorial in Skillbox)
+//  https://bruno.ph/blog/articles/swift-tutorial-mytodo/ - helped me with
+//  persistence
 
 import UIKit
 
 class ViewController: UITableViewController {
-    var Items = ToDoItem.getDefaultData()
+    
+    var Items = [ToDoItem]()
     let addDialog = UIAlertController(title: "Add", message: "Enter new:", preferredStyle: .alert)
     let editDialog = UIAlertController(title: "Edit", message: "Edit the row:", preferredStyle: .alert)
     var selectedRowForEditing: IndexPath? = nil
@@ -28,6 +31,40 @@ class ViewController: UITableViewController {
         editDialog.addTextField(configurationHandler: nil)
         editDialog.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         editDialog.addAction(UIAlertAction(title: "Save", style: .default, handler: editItem))
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
+            name:
+                UIApplication.didEnterBackgroundNotification, object: nil)
+        
+        
+        do
+        {
+            // Try to load from persistence
+            self.Items = try [ToDoItem].readFromPersistence()
+        }
+        catch let error as NSError
+        {
+            if error.domain == NSCocoaErrorDomain && error.code == NSFileReadNoSuchFileError
+            {
+                NSLog("No persistence file found, not necesserially an error...")
+            }
+            else
+            {
+                let alert = UIAlertController(
+                    title: "Error",
+                    message: "Could not load the to-do items!",
+                    preferredStyle: .alert)
+
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+                self.present(alert, animated: true, completion: nil)
+
+                NSLog("Error loading from persistence: \(error)")
+            }
+        }
+
     }
     
     func addNewItem(action: UIAlertAction)
@@ -37,6 +74,19 @@ class ViewController: UITableViewController {
         Items.append(NewItem)
         let Path = IndexPath(row: Items.count - 1, section: 0)
         tableView.insertRows(at: [Path], with: .left)
+    }
+    
+    @objc
+    public func applicationDidEnterBackground(_ notification: NSNotification)
+    {
+        do
+        {
+            try Items.writeToPersistence()
+        }
+        catch let error
+        {
+            NSLog("Error writing to persistence: \(error)")
+        }
     }
     
     

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164857F024C37AE800BB9007 /* todolistappTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 16C9AE3224BB9F8D00411BD3 /* todolistappTests.xctest */; };
+		164857F124C37AEF00BB9007 /* todolistappUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 16C9AE3D24BB9F8D00411BD3 /* todolistappUITests.xctest */; };
+		169A20AA24D6023F00D7CE1D /* icon1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 169A20A524D6023F00D7CE1D /* icon1024.jpg */; };
+		169A20AB24D6023F00D7CE1D /* icon87.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 169A20A624D6023F00D7CE1D /* icon87.jpg */; };
+		169A20AC24D6023F00D7CE1D /* icon180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 169A20A724D6023F00D7CE1D /* icon180.jpg */; };
+		169A20AD24D6023F00D7CE1D /* icon58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 169A20A824D6023F00D7CE1D /* icon58.jpg */; };
+		169A20AE24D6023F00D7CE1D /* icon120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 169A20A924D6023F00D7CE1D /* icon120.jpg */; };
 		16C9AE2024BB9F8B00411BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C9AE1F24BB9F8B00411BD3 /* AppDelegate.swift */; };
 		16C9AE2224BB9F8B00411BD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C9AE2124BB9F8B00411BD3 /* SceneDelegate.swift */; };
 		16C9AE2424BB9F8B00411BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C9AE2324BB9F8B00411BD3 /* ViewController.swift */; };
@@ -36,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		169A20A524D6023F00D7CE1D /* icon1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon1024.jpg; sourceTree = SOURCE_ROOT; };
+		169A20A624D6023F00D7CE1D /* icon87.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon87.jpg; sourceTree = SOURCE_ROOT; };
+		169A20A724D6023F00D7CE1D /* icon180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon180.jpg; sourceTree = SOURCE_ROOT; };
+		169A20A824D6023F00D7CE1D /* icon58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon58.jpg; sourceTree = SOURCE_ROOT; };
+		169A20A924D6023F00D7CE1D /* icon120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon120.jpg; sourceTree = SOURCE_ROOT; };
 		16C9AE1C24BB9F8B00411BD3 /* todolistapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolistapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C9AE1F24BB9F8B00411BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C9AE2124BB9F8B00411BD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +120,11 @@
 				16C9AE2824BB9F8D00411BD3 /* Assets.xcassets */,
 				16C9AE2A24BB9F8D00411BD3 /* LaunchScreen.storyboard */,
 				16C9AE2D24BB9F8D00411BD3 /* Info.plist */,
+				169A20A824D6023F00D7CE1D /* icon58.jpg */,
+				169A20A624D6023F00D7CE1D /* icon87.jpg */,
+				169A20A924D6023F00D7CE1D /* icon120.jpg */,
+				169A20A724D6023F00D7CE1D /* icon180.jpg */,
+				169A20A524D6023F00D7CE1D /* icon1024.jpg */,
 				16C9AE4F24BBAC6500411BD3 /* todo_item.swift */,
 			);
 			path = todolistapp;
@@ -235,9 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169A20AD24D6023F00D7CE1D /* icon58.jpg in Resources */,
 				16C9AE2C24BB9F8D00411BD3 /* LaunchScreen.storyboard in Resources */,
 				16C9AE2924BB9F8D00411BD3 /* Assets.xcassets in Resources */,
+				169A20AC24D6023F00D7CE1D /* icon180.jpg in Resources */,
 				16C9AE2724BB9F8B00411BD3 /* Main.storyboard in Resources */,
+				169A20AA24D6023F00D7CE1D /* icon1024.jpg in Resources */,
+				169A20AE24D6023F00D7CE1D /* icon120.jpg in Resources */,
+				169A20AB24D6023F00D7CE1D /* icon87.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164857F024C37AE800BB9007 /* todolistappTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164857F124C37AEF00BB9007 /* todolistappUITests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dimary.todolistapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dimary.todolistapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

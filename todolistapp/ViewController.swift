@@ -22,7 +22,7 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "#ToDo List"
+        self.title = "My ToDo List"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapOnAddButton))
         addDialog.addTextField(configurationHandler: nil)
         addDialog.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

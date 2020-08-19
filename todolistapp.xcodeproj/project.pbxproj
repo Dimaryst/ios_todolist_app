@@ -48,7 +48,7 @@
 		169A20A724D6023F00D7CE1D /* icon180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon180.jpg; sourceTree = SOURCE_ROOT; };
 		169A20A824D6023F00D7CE1D /* icon58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon58.jpg; sourceTree = SOURCE_ROOT; };
 		169A20A924D6023F00D7CE1D /* icon120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon120.jpg; sourceTree = SOURCE_ROOT; };
-		16C9AE1C24BB9F8B00411BD3 /* todolistapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolistapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C9AE1C24BB9F8B00411BD3 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C9AE1F24BB9F8B00411BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16C9AE2124BB9F8B00411BD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		16C9AE2324BB9F8B00411BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		16C9AE1D24BB9F8B00411BD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16C9AE1C24BB9F8B00411BD3 /* todolistapp.app */,
+				16C9AE1C24BB9F8B00411BD3 /* ToDo.app */,
 				16C9AE3224BB9F8D00411BD3 /* todolistappTests.xctest */,
 				16C9AE3D24BB9F8D00411BD3 /* todolistappUITests.xctest */,
 			);
@@ -165,7 +165,7 @@
 			);
 			name = todolistapp;
 			productName = todolistapp;
-			productReference = 16C9AE1C24BB9F8B00411BD3 /* todolistapp.app */;
+			productReference = 16C9AE1C24BB9F8B00411BD3 /* ToDo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		16C9AE3124BB9F8D00411BD3 /* todolistappTests */ = {
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dimary.todolistapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ToDo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -488,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dimary.todolistapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ToDo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

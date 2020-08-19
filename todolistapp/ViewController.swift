@@ -13,8 +13,8 @@ import UIKit
 class ViewController: UITableViewController {
     
     var Items = [ToDoItem]()
-    let addDialog = UIAlertController(title: "Add", message: "Enter new:", preferredStyle: .alert)
-    let editDialog = UIAlertController(title: "Edit", message: "Edit the row:", preferredStyle: .alert)
+    let addDialog = UIAlertController(title: "Add new item", message: "Enter the activity you want to schedule:", preferredStyle: .alert)
+    let editDialog = UIAlertController(title: "Edit", message: "Edit the activity:", preferredStyle: .alert)
     var selectedRowForEditing: IndexPath? = nil
     var selectedRowEditingSuccess: ((Bool) -> Void)? = nil
     
